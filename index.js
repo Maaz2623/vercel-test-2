@@ -7,7 +7,7 @@ app.use('/', (req, res) => {
 })
 
 app.use('/users', (req, res) => {
-    res.json({message: "Users Route"})
+    res.send("Server Running")
 })
 
 app.listen(5000, () => console.log("Server running on port 5000"))
